@@ -1,0 +1,80 @@
+/* product */
+.gallary{
+    width: 100%;
+    /* padding: 70px 0; */
+}
+.gallary h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallary h1 span{
+    margin-left: 15px ;
+    color: palevioletred;
+    font-family: mv boli;
+
+}
+.gallary .gallary_image_box{
+    width: 90%;
+    height: 90%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 10px ;
+}
+.gallary .gallary_image_box .gallary_image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    width: 90%;
+    height: 90%;
+    margin-top: 20px;
+    
+}
+.gallary .gallary_image_box .gallary_image img{
+    width: 100%;
+    
+    transition: 0.3s;
+}
+.gallary .gallary_image_box .gallary_image:hover img{
+    opacity: 0.4;
+}
+
+.gallary .gallary_image_box .gallary_image .gallary_btn{
+    position: absolute;
+    margin-top: 180px;
+    color: black;
+    background: palevioletred;
+    padding: 7px 25px;
+    text-decoration: none;
+    opacity: 0;
+    transform: translateY(45px);
+    z-index: 5;
+    transition: 0.3s;
+}
+.gallary .gallary_image_box .gallary_image:hover .gallary_btn{
+    opacity: 1;
+    transform: translateY(0);
+ 
+}
+.gallary .gallary_image_box .gallary_image .gallary_btn:hover{
+ color: wheat;
+ 
+}
+
+@media (max-width:600px)
+{
+    .gallary .gallary_image_box{  
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-gap: 5px ;
+      
+    }
+     .gallary_image{
+     margin-left: 50px;   
+  
+    }
+  
+}
